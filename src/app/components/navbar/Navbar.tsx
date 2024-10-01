@@ -1,35 +1,51 @@
-import { Flex, VStack } from "@chakra-ui/react"
+import { Flex, Show, Text, VStack } from "@chakra-ui/react"
 import { Church } from "lucide-react"
 import { DesktopNavbar } from "./DesktopNavbar"
+import { MobileNavbar } from "./MobileNavbar"
 
 export const Navbar = () => {
   return (
     <VStack
       as={'header'}
+      position={'fixed'}
       w={'100%'}
-      borderWidth={'thin'}
-      borderColor={'red'}
       spacing={0}
-      minH={'40px'}
+      minH={'60px'}
       align={'center'}
       justify={'center'}
+      zIndex={1000}
+      color={'white'}
     >
       <Flex
         as={'nav'}
         maxW={'1440px'}
         w={'100%'}
-        borderWidth={'thin'}
-        borderColor={'blue'}
         flexGrow={1}
         px={'2rem'}
         alignItems={'center'}
         justifyContent={'space-between'}
       >
-        <Flex>
+        <Flex
+          alignItems={'center'}
+          gap={'15px'}
+        >
           <Church />
+          <Text
+          >
+            Iglesia Cristiana en Barrio Nuevo
+          </Text>
         </Flex>
 
-        <DesktopNavbar />
+        <Show
+          above={'lg'}
+        >
+          <DesktopNavbar />
+        </Show>
+        <Show
+          below={'lg'}
+        >
+          <MobileNavbar />
+        </Show>
       </Flex>
     </VStack>
   )

@@ -24,8 +24,7 @@ export const DesktopNavbar = () => {
               _hover={{
                 color: 'red.500'
               }}
-              color={pathname === item.to ? 'red.500' : 'black'}
-              textTransform={'uppercase'}
+              color={pathname === item.to ? 'red.500' : 'white'}
             >
               {item.label}
             </Box>
