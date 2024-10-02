@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Text } from '@chakra-ui/react'
+import { Box, Button, Flex, Heading, Text } from '@chakra-ui/react'
 import Image from 'next/image'
 import React from 'react'
 
@@ -25,10 +25,10 @@ export const Hero = () => {
           left={'50%'}
           transform={'translate(-50%, -50%)'}
           flexDirection={'column'}
-          borderWidth={'thin'}
           gap={8}
           alignItems={'center'}
-
+          maxW={'80%'}
+          w={'100%'}
           textAlign={'center'}
         >
           <Heading
@@ -36,7 +36,7 @@ export const Hero = () => {
             textShadow={'xl'}
             fontWeight={'600'}
             textTransform={'uppercase'}
-            fontSize={'xl'}
+            fontSize={{ base: 'sm', md: 'xl' }}
             letterSpacing={4}
             color={'red.600'}
           >
@@ -44,17 +44,26 @@ export const Hero = () => {
           </Heading>
           <Heading
             color={'white'}
-            fontSize={'7xl'}
+            fontSize={{ base: '3xl', md: '5xl', lg: '7xl' }}
           >
             Iglesia Cristiana en Barrio Nuevo
           </Heading>
           <Text
-            maxW={'50%'}
+            maxW={{ base: '75%', md: '40%' }}
             w={'100%'}
             color={'white'}
           >
-            voluptatibus a libero optio sit dolores iure enim? Perferendis voluptatum quaerat sint ad voluptates, vitae, dolor doloremque odio nihil tempore eum.
+            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in.
           </Text>
+          <Box>
+            <Button
+              colorScheme={'red'}
+              size={{ base: 'md', md: 'lg' }}
+              rounded={'full'}
+            >
+              Visitanos
+            </Button>
+          </Box>
         </Flex>
       </Box>
     </Flex>
