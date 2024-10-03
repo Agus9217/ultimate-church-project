@@ -13,7 +13,7 @@ export const Navbar = () => {
       minH={'60px'}
       align={'center'}
       justify={'center'}
-      zIndex={1000}
+      zIndex={2000}
       color={'white'}
     >
       <Flex

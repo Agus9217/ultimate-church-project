@@ -7,6 +7,8 @@ export const Hero = () => {
     <Flex
       w={'100%'}
       h={'100dvh'}
+      position={'relative'}
+      zIndex={0}
     >
       <Box>
         <Image
@@ -36,7 +38,7 @@ export const Hero = () => {
             textShadow={'xl'}
             fontWeight={'600'}
             textTransform={'uppercase'}
-            fontSize={{ base: 'sm', md: 'xl' }}
+            fontSize={{ base: 'sm', md: 'md' }}
             letterSpacing={4}
             color={'red.600'}
           >
