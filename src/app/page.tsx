@@ -9,17 +9,18 @@ export default function HomePage() {
       <Container
         as={'main'}
         maxW={'1440px'}
-        borderWidth={'thin'}
-        borderColor={'red'}
         h={'100dvh'}
+        p={0}
       >
         <Flex
-          py={8}
+          p={8}
+          h={'500px'}
         >
           <Card
-            maxW={'300px'}
+            maxW={'250px'}
             w={'100%'}
             shadow={'none'}
+            bg={'none'}
           >
             <CardHeader>
               <Stack>
@@ -54,6 +55,7 @@ export default function HomePage() {
             maxW={'300px'}
             w={'100%'}
             shadow={'none'}
+            bg={'none'}
           >
             <CardHeader>
               <Stack>
@@ -88,6 +90,7 @@ export default function HomePage() {
             maxW={'300px'}
             w={'100%'}
             shadow={'none'}
+            bg={'none'}
           >
             <CardHeader>
               <Stack>
@@ -118,6 +121,25 @@ export default function HomePage() {
               </Text>
             </CardBody>
           </Card>
+          <Flex
+            mt={'-70px'}
+            flexGrow={1}
+            bg={'red.600'}
+            zIndex={1000}
+            color={'white'}
+            py={8}
+            px={6}
+            flexDir={'column'}
+            gap={9}
+            justifyContent={'center'}
+          >
+            <Heading>
+              A Christian should live for the glory of God and the well-being of others.
+            </Heading>
+            <Text>
+              Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+            </Text>
+          </Flex>
         </Flex>
       </Container>
     </>
