@@ -285,6 +285,34 @@ export default function HomePage() {
             </Text>
           </Flex>
         </Flex>
+        <Flex
+          borderWidth={'thin'}
+          borderColor={'red'}
+          w={'100%'}
+          alignItems={'center'}
+          justifyContent={'center'}
+          pt={'5rem'}
+        >
+          <Box
+            maxW={{ base: '80%', lg: '40%' }}
+            textAlign={'center'}
+          >
+            <Text
+              letterSpacing={4}
+              textTransform={'uppercase'}
+              color={'red.600'}
+              fontWeight={600}
+              py={4}
+            >
+              Our sermons
+            </Text>
+            <Heading
+              textTransform={'uppercase'}
+            >
+              Watch and Listen to our Sermons
+            </Heading>
+          </Box>
+        </Flex>
       </Container>
     </>
   );
