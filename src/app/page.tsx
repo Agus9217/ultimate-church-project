@@ -168,6 +168,7 @@ export default function HomePage() {
                 alt={'Salon de la iglesia'}
                 objectFit={'cover'}
                 objectPosition={'center'}
+                sizes={'100%'}
               />
             </Box>
 

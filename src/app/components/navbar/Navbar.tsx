@@ -11,7 +11,6 @@ export const Navbar = () => {
   const [change, setChange] = useState(0)
   const { scrollY } = useScroll()
   useMotionValueEvent(scrollY, 'change', (latest) => setChange(latest))
-  console.log(change)
 
   return (
     <VStack
